@@ -22,4 +22,4 @@ that corresponds to a page is stored to a hash table in order to find quickly if
 There are two types of objects to be freed: these that belongs to system's malloc and these that were allocated from mymalloc. 
 In order to find the kind of the object, we round the address down to a multiple of 4096 and we check if this page corresponds
 to a page of our allocator. If the object wasn't allocated by our allocator, then we just call system's free. Otherwise, we 
-chhange the value of the proper bit in the bit vector.
+change the value of the proper bit in the bit vector.
